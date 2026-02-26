@@ -5,7 +5,7 @@ from git import Repo
 
 # === VARS === #
 last_n_commits = 20
-repo_url = ""
+repo_url = "https://github.com/deltaplanoo/Agentic-Probability-Engine"
 
 
 def generate_mermaid(repo_url, limit=last_n_commits):
@@ -51,4 +51,4 @@ def generate_mermaid(repo_url, limit=last_n_commits):
 
 if __name__ == "__main__":
     url = repo_url if repo_url else input("Enter the GitHub repository URL: ")
-    print("\n" + generate_mermaid(url))
+    print(generate_mermaid(url))
